@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 153, 255);
+}
+
+.cups {
+    width: 70px;
+    height: 100px;
+    background-color: #484848;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#cup1 {
+    top: 230px;
+    right: 265px;
+    z-index: 10;
+    transition: 1s;
+}
+
+#cup2 {
+    top: 230px;
+    right: 145px;
+    z-index: 10;
+    transition: 1s;
+}
+
+#cup3 {
+    top: 230px;
+    right: 25px;
+    z-index: 10;
+    transition: 1s;
+}
+
+#ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff5f2b;
+    z-index: 9;
+    top: 300px;
+    right: 165px;
+    position: absolute;
+}
+
+#start {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ff5f2b;
+    position: absolute;
+    top: 380px;
+    right: 105px;
+    background-color: #605858;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#level {
+    color: white;
+}
+
+#score {
+    color: white;
+}
+
+#highest-level {
+    color: white;
+}
+
+#upper-part {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-color: #484848;
+    color: #ff5f2b;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#try-again {
+    top: 380px;
+    right: 105px;
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ff5f2b;
+    position: absolute;
+    background-color: #605858;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        background-image: url('background-wide.jpg');
+        background-size: cover;
+    }
+}
